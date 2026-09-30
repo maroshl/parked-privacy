@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parked privacy policy</title>
+<meta name="description" content="Privacy policy for Parked, the Android app that saves where you parked when your car's Bluetooth disconnects.">
+<!--
+  Deliberately self-contained: no web fonts, scripts, analytics or other third-party requests,
+  so reading the privacy policy sends nothing to anyone.
+  Source of truth: docs/PRIVACY_POLICY.md in the app's repository. Change both together.
+-->
+<style>
+  :root {
+    --bg: #F5F8F7;
+    --text: #161D1D;
+    --muted: #3F4948;
+    --accent: #006A6A;
+    --card: #E6EEEC;
+    --car: #FF8A1E;
+    --on-car: #2A1400;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F1415;
+      --text: #DDE4E3;
+      --muted: #BEC9C8;
+      --accent: #80D5D2;
+      --card: #1B2223;
+      --car: #FFB77C;
+      --on-car: #4C2700;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .badge {
+    width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%;
+    background: var(--car); color: var(--on-car);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 22px;
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0; letter-spacing: -0.4px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; color: var(--accent); }
+  .effective { color: var(--muted); margin: 0 0 24px; }
+  .summary { background: var(--card); border-radius: 20px; padding: 18px 20px; }
+  .summary h2 { margin-top: 0; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="badge" aria-hidden="true">P</div>
+  <h1>Parked privacy policy</h1>
+</header>
+<p class="effective">Effective [date]</p>
+
+<p>Parked is published by [full name], [IČO], [address], Czech Republic ("we"). Contact:
+[email].</p>
+
+<section class="summary">
+<h2>In short</h2>
+<p>Parked keeps everything on your phone. We run no servers, and no data about you ever
+reaches us. The one thing that leaves your phone is the location of a saved parking spot, which
+is sent to your phone's geocoding service (Google's, on most Android phones) to look up its
+street address.</p>
+</section>
+
+<h2>What the app handles, and why</h2>
+<p><strong>Location.</strong> When the Bluetooth connection to a device you have marked as your
+car disconnects, Parked records your phone's location, including when the app is closed or not
+in use. That is the app's only feature: showing you where you parked and navigating you back.
+Location is read for up to 60 seconds after the disconnect and at no other time. Parked gets the
+position from Google Play services on your phone; how Google Play services itself handles
+location is set by your phone's location settings and Google's privacy policy.</p>
+
+<p><strong>Bluetooth devices.</strong> To let you choose your car, the app lists the devices
+paired with your phone. For the ones you choose, it stores the device name, its hardware (MAC)
+address, any name you give it, and whether you want a notification for it. When you turn on
+accurate mode, Android records an association between Parked and that device. Android keeps
+that record, and you can remove it in your phone's settings.</p>
+
+<p><strong>Parking history.</strong> The app keeps the last five parking spots for each device,
+each with its coordinates, accuracy, time and street address.</p>
+
+<p><strong>Photos.</strong> The Photo button in the parking notification opens your camera app.
+Photos are taken and stored by the camera app, and Parked never sees them.</p>
+
+<p><strong>Purchases.</strong> If you buy Parked Pro, the payment is handled entirely by Google
+Play. We receive a confirmation that the purchase exists, never your payment details.</p>
+
+<h2>What leaves your phone</h2>
+<ul>
+  <li><strong>Street address lookup.</strong> The coordinates of each saved spot are sent to the
+  geocoding service built into your phone — Google's, on most Android phones — which returns
+  the street address. It is subject to that provider's privacy policy.</li>
+  <li><strong>Google Play</strong>, for purchases, as described above.</li>
+  <li><strong>Android backup.</strong> If backup is turned on for your phone, Android may include
+  Parked's settings (your chosen devices, their names, and your preferred maps app) in it, so
+  they return when you set up a new phone. Parking history is deliberately excluded.</li>
+</ul>
+<p>That is all. Parked contains no advertising, no analytics and no crash reporting, and it has
+no user accounts. Nothing is sold or shared with anyone else.</p>
+
+<h2>How long it is kept, and how to delete it</h2>
+<p>Each device keeps its five most recent parking spots; older ones are deleted automatically as
+new ones arrive. To delete everything, clear the app's storage (Settings → Apps → Parked →
+Storage → Clear storage) or uninstall the app. Since we hold none of your data, there is nothing
+for us to delete on our side. For data held by Google, see Google's privacy policy.</p>
+
+<h2>Security</h2>
+<p>Parking history and settings are kept in the app's private storage, which other apps cannot
+read. Parked itself opens no network connections: the address lookup and purchases are carried
+out by Google Play services on your phone.</p>
+
+<h2>Children</h2>
+<p>Parked is intended for adults and is not directed at children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: [email].</p>
+</main>
+</body>
+</html>
